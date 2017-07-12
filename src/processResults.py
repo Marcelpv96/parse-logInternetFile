@@ -43,7 +43,7 @@ class processResults():
         x, y = zip(*lists)
         plt.figure(figsize=(12, 9))
         plt.plot(x, y)
-        plt.show()
+        plt.savefig(self.results.fileName + "_results.png")
 
     def summaryOfAllData(self):
         f = open(self.results.fileName + '_summary', 'w+')
