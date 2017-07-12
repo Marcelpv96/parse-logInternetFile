@@ -41,6 +41,7 @@ class processResults():
     def plotData(self):
         lists = sorted(self.results.cutsForSecond.items())
         x, y = zip(*lists)
+        plt.figure(figsize=(12, 9))
         plt.plot(x, y)
         plt.show()
 
